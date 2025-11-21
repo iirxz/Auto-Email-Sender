@@ -30,14 +30,7 @@ export default async function handler(request, response) {
         to: email_to,
         subject: subject,
         html: `<p>${body_content}</p>`, // Use HTML for the body
-        attachments: [
-            {
-                // This file MUST be in your repo for this to work
-                // or hosted somewhere public
-                filename: 'your-file-to-attach.pdf',
-                path: 'your-file-to-attach.pdf', // Path to the file
-            },
-        ],
+
     };
 
     // 5. Try to send the email
