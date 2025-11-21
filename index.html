@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Mail Sender</title>
+    <link rel="stylesheet" href="style.css">
+</head><body>
+    <div class="container">
+        <h1>Send an Email</h1>
+        <p>Fill out the form below to send your pre-defined email and attachment.</p>
+        
+        <form id="contact-form">
+            <label for="email_to">Recipient Email:</label>
+            <input type="email" id="email_to" name="email_to" required>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="body_content">Email Body:</label>
+            <textarea id="body_content" name="body_content" rows="6" required></textarea>
+            
+            <button type="submit" id="submit-btn">Send Email</button>
+            <p id="status-message"></p>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
