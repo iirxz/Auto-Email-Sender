@@ -26,7 +26,7 @@ export default async function handler(request, response) {
 
     // 4. Define the email's content
     let mailOptions = {
-        from: `Your Name <${process.env.GMAIL_USERNAME}>`, // Change "Your Name"
+        from: `Aurora Skins <${process.env.GMAIL_USERNAME}>`, // Change "Your Name"
         to: email_to,
         subject: subject,
         html: `<p>${body_content}</p>`, // Use HTML for the body
