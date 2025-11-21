@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- IMPORTANT ---
     // Change this to your Vercel/Netlify function URL
     // It will look like: https://your-project-name.vercel.app/api/send-email
-    const BACKEND_URL = "/api/send-email"; 
+    const BACKEND_URL = "https://automatic-email-sender.vercel.app/api/send-email"; 
 
     form.addEventListener("submit", async (e) => {
         e.preventDefault();
